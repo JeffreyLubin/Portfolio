@@ -20,7 +20,7 @@ body{
     background-color: #17252A;
     opacity: .95;
     border-right: 1px solid rgb(39, 64, 73);
-    
+    float: left;
 }
 
 #nav_icon{
@@ -114,8 +114,8 @@ body{
             display: block;
         }
 
-        #social_media_webpage{
-            display: none;
+        #social_media{
+            font-size: 48px;
         }
 
         #nav_ul{
