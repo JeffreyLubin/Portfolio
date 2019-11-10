@@ -1,0 +1,74 @@
+html{
+    height: 100%;
+}
+
+@-ms-viewport{
+    width: device-width;
+  }
+
+body{
+    background-color: #1A1A1d;
+    margin: 0 auto;
+    height: 100%;
+}
+
+#header{
+    height: 100%;
+    width: 300px;
+    background-color: #17252A;
+    
+}
+
+#nav_icon{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 50%;
+    }
+
+    #name_nav{
+        color: #FEFFFF;
+        font-family: 'Cedarville Cursive', cursive;
+        text-align: center;
+        font-size: 40px;
+        margin: 0;
+    }
+
+    #nav_ul{
+        color: #FEFFFF;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .nav_li{
+        font-family: 'Indie Flower', cursive;
+        letter-spacing: 4px;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 30px;
+        width: 100%;
+        height:100%;
+    }
+
+    @keyframes navigation_hover{
+        from{
+            background-color: #17252A;
+            color: #FEFFFF;
+            
+        }
+
+        to{
+            background-color:black;
+            color: #C3073f;
+            
+        }
+    }
+
+    .nav_li:hover{
+       animation-name: navigation_hover;
+       animation-duration: 1000ms;
+       animation-fill-mode: forwards;
+    }
