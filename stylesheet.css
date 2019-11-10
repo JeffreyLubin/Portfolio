@@ -1,22 +1,30 @@
+@-ms-viewport{
+    width: device-width;
+  }
+
 html{
     height: 100%;
     width: 100%;
 }
 
-@-ms-viewport{
-    width: device-width;
-  }
+head{
+    height: 100%;
+}
 
 body{
-    background-color: #1A1A1d;
+    background: url('img/background_image.jpeg');
+    /*background-color: black;*/
+    background-repeat: no-repeat;
     margin: 0 auto;
     height: 100%;
 }
 
 #header{
-    height: 100%;
+    min-height: 100%;
     width: 300px;
     background-color: #17252A;
+    opacity: .95;
+    border-right: 1px solid rgb(39, 64, 73);
     
 }
 
@@ -29,18 +37,29 @@ body{
     border-radius: 50%;
     }
 
-    #name_nav{
+    #logo_nav{
         color: #FEFFFF;
         font-family: 'Cedarville Cursive', cursive;
         text-align: center;
         font-size: 40px;
         margin: 0;
     }
+    #social_media_webpage{
+        font-size: 36px;
+        text-align: center;
+        margin-top: 25px;
+        word-spacing: 15px;
+        color: #FEFFFF;
+    }
 
     #nav_ul{
         color: #FEFFFF;
         list-style-type: none;
         padding: 0;
+    }
+
+    .nav_li_social_media{
+        display: hidden;
     }
 
     .nav_li{
@@ -94,14 +113,21 @@ body{
             display: none;
         }
 
-        #name_nav{
+        #logo_nav{
             float: left;
             padding-left: 25px;
+            display: block;
         }
+
+        #social_media_webpage{
+            display: none;
+        }
+
         #nav_ul{
             margin: 0;
           
         }
+
         .nav_li{
         display: none;
         top: 50px;
