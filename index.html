@@ -8,12 +8,14 @@
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link href="stylesheet.css" rel="stylesheet">
     </head>
     <body>
         <div id="header">
             <img id="nav_icon" src="img/nav_icon.jpg">
             <p id="name_nav">Jeffrey Lubin</p>
+            <div class="menu_toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
             <ul id="nav_ul">
                 <li class="nav_li">Home</li>
                 <li class="nav_li">About</li>
@@ -22,5 +24,13 @@
                 <li class="nav_li">Contact</li>
             </ul>
         </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.menu_toggle').click(function(){
+                    $('.nav_li').toggleClass('active')
+                })
+            })
+        </script>
     </body>
 </html>
