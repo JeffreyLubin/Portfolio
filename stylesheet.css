@@ -338,3 +338,42 @@ h1{
     font-family: 'Indie Flower', cursive;
     border-radius: 5px;
 }
+
+#contact_form{
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    background-color: #17252A;
+    border-radius: 5px;
+
+}
+
+input{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+}
+
+textarea{
+    width: 80%;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+
+button{
+    height: 50px;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+    border-radius: 5px;
+    font-size: 24px;
+    font-family: 'Indie Flower', cursive;
+}
+
+button:hover{
+    background-color: black;
+    color: #C3073f;
+}

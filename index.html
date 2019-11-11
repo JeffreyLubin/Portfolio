@@ -2,7 +2,7 @@
 <html>
     <!--COLOR SCHEMES: #17252A, DARK. #2B7A78, Blue/Gray, #3AAFA9, Blue/Green, #DEF2F1, Gray, #FEFFFF, while-->
     <head>
-        <title>Jeffrey Lubin | Home</title>
+        <title class="title">Jeffrey Lubin | Home</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
@@ -67,6 +67,18 @@
 
                 <div id="contact">
                      <p><u>Contact</u></p>
+                     <div id="contact_form">
+                         <p class="webpage_text">Fill out the form below, and I'll make sure to get back into contact with you in 24-48hrs! Thank you!</p>
+                        <form id="form_contact" method="POST">
+                            Name:<input type="text" name="name" required>
+                            Email:<input type="email" name="email" required>
+                            Phone:<input type="text" name="phone_number">
+                            Message:<textarea></textarea>
+                            <button type="submit" form="form_contact" value="Submit">Submit</button>
+                        </form>
+                        
+
+                     </div>
 
                 </div>
 
