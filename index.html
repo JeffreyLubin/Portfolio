@@ -69,12 +69,12 @@
                      <p><u>Contact</u></p>
                      <div id="contact_form">
                          <p class="webpage_text">Fill out the form below, and I'll make sure to get back into contact with you in 24-48hrs! Thank you!</p>
-                        <form id="form_contact" method="POST" name="emailForm" actiion="form_to_email.php">
+                        <form id="form_contact" method="post" name="emailForm" actiion="contactform.php">
                             Name:<input type="text" name="name" required>
                             Email:<input type="email" name="email" required>
                             Phone:<input type="text" name="phone_number">
                             Message:<textarea name="message"></textarea>
-                            <button type="submit" form="form_contact" value="Submit">Submit</button>
+                            <button type="submit" form="form_contact" name="submit">Submit</button>
                         </form>
                         
 
