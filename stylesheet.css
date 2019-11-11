@@ -2,6 +2,21 @@
     width: device-width;
   }
 
+@keyframes navigation_hover{
+from{
+    background-color: #17252A;
+    color: #FEFFFF;
+        
+    }
+
+to{
+    background-color:black;
+    color: #C3073f;
+        
+    }
+}
+
+
 html{
     height: 100%;
 }
@@ -15,10 +30,17 @@ body{
 }
 
 a{
+    text-decoration: none;
+    color: #FEFFFF;
+}
+
+/******* NAVIGATION CODE BEGINS*******/
+
+.social_media_icons{
     color: #C3073f;
 }
 
-a:hover{
+.social_media_icons:hover{
     color: rgb(121, 0, 36);
     transition: .3s;
 }
@@ -43,114 +65,98 @@ a:hover{
     border-radius: 50%;
     }
 
-    #logo_nav{
-        color: #FEFFFF;
-        font-family: 'Cedarville Cursive', cursive;
-        text-align: center;
-        font-size: 40px;
-        margin: 0;
+#logo_nav{
+    color: #FEFFFF;
+    font-family: 'Cedarville Cursive', cursive;
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+}
+
+#logo_nav:hover{
+    font-weight: bolder;
+}
+
+#nav_ul{
+    color: #FEFFFF;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav_li_social_media{
+    display: hidden;
+}
+
+.nav_li{
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 4px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 30px;
+    width: 100%;
+    height:100%;
+}
+
+
+.nav_li:hover{
+    animation-name: navigation_hover;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+
+.menu_toggle{
+    color: white;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width: 991px){
+    #header{
+        width: 100%;
+        height: 100px;
     }
-    #social_media_webpage{
-        font-size: 36px;
-        text-align: center;
-        margin-top: 25px;
-        word-spacing: 15px;
-        color: #FEFFFF;
+
+    #nav_icon{
+        display: none;
+    }
+
+    #logo_nav{
+        float: left;
+        padding-left: 25px;
+        display: block;
+    }
+
+    #social_media{
+        font-size: 48px;
     }
 
     #nav_ul{
-        color: #FEFFFF;
-        list-style-type: none;
-        padding: 0;
-    }
-
-    .nav_li_social_media{
-        display: hidden;
+        margin: 0;
+      
     }
 
     .nav_li{
-        font-family: 'Indie Flower', cursive;
-        letter-spacing: 4px;
-        text-align: center;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        font-size: 30px;
-        width: 100%;
-        height:100%;
+    display: none;
+    top: 50px;
+    background: #17252A;
+    border-bottom: .5px solid black;
+    transition: .3s;
+    
     }
 
-
-    @keyframes navigation_hover{
-        from{
-            background-color: #17252A;
-            color: #FEFFFF;
-            
-        }
-
-        to{
-            background-color:black;
-            color: #C3073f;
-            
-        }
-    }
-
-    .nav_li:hover{
-       animation-name: navigation_hover;
-       animation-duration: 1000ms;
-       animation-fill-mode: forwards;
+    .nav_li.active{
+        display: inline-block;
+        transition: .5s;
     }
 
     .menu_toggle{
-        color: white;
-        float: right;
-        line-height: 50px;
-        font-size: 24px;
-        cursor: pointer;
-        display: none;
+        display: block;
+        padding-right: 25px;
+        margin-top: 20px;
     }
-
-    @media(max-width: 991px){
-        #header{
-            width: 100%;
-            height: 100px;
-        }
-
-        #nav_icon{
-            display: none;
-        }
-
-        #logo_nav{
-            float: left;
-            padding-left: 25px;
-            display: block;
-        }
-
-        #social_media{
-            font-size: 48px;
-        }
-
-        #nav_ul{
-            margin: 0;
-          
-        }
-
-        .nav_li{
-        display: none;
-        top: 50px;
-        background: #17252A;
-        border-bottom: .5px solid black;
-        transition: .3s;
-        
-        }
-
-        .nav_li.active{
-            display: inline-block;
-            transition: .5s;
-        }
-
-        .menu_toggle{
-            display: block;
-            padding-right: 25px;
-            margin-top: 20px;
-        }
-    }
+}
