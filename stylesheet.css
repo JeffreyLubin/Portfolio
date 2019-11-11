@@ -297,6 +297,18 @@ h1{
     border-radius: 5px;
 }
 
+
+
+#about_container{
+    background-color: #17252A;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+
+
 #portfolio{
     height: 1000px;
     width: 95%;
@@ -352,6 +364,7 @@ input{
     display: block;
     margin: 0 auto;
     width: 200px;
+    text-align: center;
 }
 
 textarea{
@@ -360,7 +373,9 @@ textarea{
     display: block;
     margin: 0 auto;
     padding-bottom: 5px;
+    border-radius: 5px;
 }
+
 
 button{
     height: 50px;
