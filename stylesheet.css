@@ -36,6 +36,11 @@ a{
     color: #FEFFFF;
 }
 
+h1{
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+}
+
 /******* NAVIGATION CODE BEGINS*******/
 
 .social_media_icons{
@@ -176,60 +181,144 @@ a{
     overflow: hidden;
 }
 
-#home_content{
-    background-color: white;
+#container_content{
+    display: block;
+    background-color: #17252A;
     float: right;
     margin-right: 20px;
     margin-top: 20px;
     width: 85%;
     height: 95%;
-    border-radius: 5px; 
+    border-radius: 5px;
+    overflow: scroll;
 }
 
 @media(max-width: 2188px){
-    #home_content{
+    #container_content{
         width: 83%;
     }
 }
 
 @media(max-width: 1833px){
-    #home_content{
+    #container_content{
         width: 80%;
     }
 }
 
 @media(max-width: 1613px){
-    #home_content{
+    #container_content{
         width: 78%;
     }
 }
 
 @media(max-width: 1471px){
-    #home_content{
+    #container_content{
         width: 76%;
     }
 }
 
 @media(max-width: 1300px){
-    #home_content{
+    #container_content{
         width: 73%;
     }
+}
+
 @media(max-width: 1200px){
-    #home_content{
+    #container_content{
         width: 71%;
     }
+}
 
 @media(max-width: 1125px){
-    #home_content{
+    #container_content{
         width: 69%;
     }
+}
 
 @media(max-width: 991px){
-    #home_content{
+    #container_content{
         margin: 0 auto;
         float: none;
         margin-top: 25px;
         border-radius: 0px 0px 5px 5px;
     }
+
+    #container_home{
+        margin-top: 100px;
+    }
 }
+
+#home{
+    height: 1000px;
+    width: 95%;
+    background-color: black;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-top: 5px;
+    text-align: center;
+    color: white;
+    font-size: 48px;
+    font-family: 'Indie Flower', cursive;
+    border-radius: 5px;
+}
+
+.webpage_text{
+    font-size: 24px;
+}
+
+
+#about{
+    height: 1000px;
+    width: 95%;
+    background-color: black;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-top: 5px;
+    text-align: center;
+    color: white;
+    font-size: 48px;
+    font-family: 'Indie Flower', cursive;
+    border-radius: 5px;
+}
+
+#portfolio{
+    height: 1000px;
+    width: 95%;
+    background-color: black;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-top: 5px;
+    text-align: center;
+    color: white;
+    font-size: 48px;
+    font-family: 'Indie Flower', cursive;
+    border-radius: 5px;
+}
+
+#music_projects{
+    height: 1000px;
+    width: 95%;
+    background-color: black;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-top: 5px;
+    text-align: center;
+    color: white;
+    font-size: 48px;
+    font-family: 'Indie Flower', cursive;
+    border-radius: 5px;
+}
+
+#contact{
+    height: 1000px;
+    width: 95%;
+    background-color: black;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-top: 5px;
+    text-align: center;
+    color: white;
+    font-size: 48px;
+    font-family: 'Indie Flower', cursive;
+    border-radius: 5px;
 }
