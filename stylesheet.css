@@ -345,6 +345,19 @@ h1{
     width: 100%;
 }
 
+.portfolio_gif{
+    height: 75%;
+    width: 75%;
+    border-radius: 5px;
+    margin-top: 15px;
+    border: 1px solid #C3073f;
+}
+
+.gif_text{
+    font-size: 36px;
+    margin: 0;
+}
+
 td{
     border: 1px solid #C3073f;
     background-color: black;
