@@ -24,3 +24,9 @@ function previousImage(){
 }
 
 setInterval(nextImage, 5000);
+    
+    function changeTitleAbout(){
+        newtitle ="About || Jeffrey Lubin";
+        title = document.getElementsByClassName('theTitle')
+        title.innerHTML = "<title>"+newtitle+"</title>";
+    }

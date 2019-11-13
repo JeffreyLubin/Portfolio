@@ -2,7 +2,7 @@
 <html>
     <!--COLOR SCHEMES: #17252A, DARK. #2B7A78, Blue/Gray, #3AAFA9, Blue/Green, #DEF2F1, Gray, #FEFFFF, while-->
     <head>
-        <title class="title">Jeffrey Lubin | Home</title>
+        <title class="theTitle">Jeffrey Lubin | Home</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
@@ -26,7 +26,7 @@
                         <a class="social_media_icons" href="https://github.com/JeffreyLubin" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>               
                         </div></li>
                 <a href="#home"><li class="nav_li">Home</li></a>
-                <a href="#about"><li class="nav_li">About</li></a>
+                <a onclick="changeTitleAbout()" href="#about"><li class="nav_li">About</li></a>
                 <a href="#portfolio"><li class="nav_li">Portfolio</li></a>
                 <a href="#music_projects"><li class="nav_li">Music Projects</li></a>
                 <a href="#contact"><li class="nav_li">Contact</li></a>
@@ -53,6 +53,41 @@
                             </div>
                             <button id="forward" onclick="nextImage()">+</button>
                             <button id="backward" onclick="previousImage()">-</button>
+                        </div>
+                        <div id="about_text_header">
+                            <p>Hey, I'm Jeffrey Lubin!</p>
+                        </div>
+                        <div id="about_text_content">
+                            <p>I was born and raised in San Antonio, TX, and still reside there to this very day. 
+                                I am looking to make a really big move in the next 6mos-1yr, but for now this city is what I call home. 
+                                I'm a musician as you might be able to tell from the slideshow above, but the main reason I'm making this website is 
+                                to showcase my web development skills. I've been interested in web development since I was in middle school, and I took 
+                                specialized classes in high school that taught me how to use HTML & CSS effectively. I lost my touch with web design after I 
+                                graduated high school in 2014, because I had plans to get a degree in computer engineering. My plans shattered though, as I decided 
+                                that I wanted to live my dreams, and I started doing music full time, putting off school to pursue my passion. 
+                                <br>
+                                <br>
+                                Every single year since I graduated, I did dabble in web development. I would get heavily interested in the topic, read endless books and 
+                                tutorials, but I wasn't consistent, and I wasn't disciplined. This back and forth, maybe I will maybe I won't, went on for about 5 1/2 years.
+                                I knew I wanted to be a web developer, but I didn't think I had the skills, so in mid 2019, I decided to finally just jump in, and I started up my studying again. 
+                                This time around though, I decided to put myself through specialized training through a company called NuCamp. I figured if I paid to sign up for classes, I'd be more 
+                                motivated, but by this time around, my self-motivation for web development is constantly being raised. Since my commitment to become a bona fide web developer, 
+                                I've started courses to learn PHP, and JavaScript, and I've decided to actually sit down and code a website for myself, to portray to the public, in hopes of finding 
+                                work doing something I really and truly love doing. This website is mainly just a way for me to prove to myself that I CAN build a functioning website, but also 
+                                to post my latest projects, and offer various services. Feel free to browse around and see what I'm all about! If you like what you see and want to talk business, or if you just want to get in touch to say hi,
+                                just go to my contact page, or email me directly @ Jeffy.Lubin@gmail.com, and I'll make sure to get back to you!
+                                <br>
+                                <br>
+                                If you took your time to read this, I sincerly thank you, and hope you're doing great. If you want to know anything more about me, just ask! I'm an open book, 
+                                but just for boredom sakes, here's some top 5 lists to get to know me better. :)
+                            </p>
+                        <table>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+
                         </div>
 
                     </div>
@@ -191,13 +226,6 @@
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <script src="script.js"></script>
         <script type="text/javascript">
-
-           /*function changeTitle(){
-                title = document.getElementsByClassName('title');
-                return title.textContent = "<title>About || Jeffrey Lubin</title>";
-                
-                
-            }*/
 
             $(document).ready(function(){
                 $('.menu_toggle').click(function(){
