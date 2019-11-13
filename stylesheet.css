@@ -332,8 +332,26 @@ h1{
     height: 80%;
     margin: 0 auto;
     border-radius: 20px;
+    overflow: scroll;
 }
 
+.webpage_text_portfolio{
+    font-size: 20px;
+    padding: 25px;
+}
+
+#portfolio_table{
+    margin: 0 auto;
+    width: 100%;
+}
+
+td{
+    border: 1px solid #C3073f;
+    background-color: black;
+    width: 50%;
+    height: 300px;
+    border-radius: 20px;
+}
 
 
 /******* MUSIC PROJECTS **********/
@@ -367,6 +385,7 @@ h1{
     height: 200px;
     border-radius: 5px 5px 0 0 ;
     background-color: #C3073f;
+    border-bottom: 2px solid black;
 }
 
 #music_logo_container ul{
