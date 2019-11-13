@@ -171,6 +171,7 @@ h1{
 }
 
 /*********** NAVIGATION ENDS RIGHT HERE ****************/
+
 #container_home{
     display: block;
     position: static;
@@ -334,6 +335,9 @@ h1{
 }
 
 
+
+/******* MUSIC PROJECTS **********/
+
 #music_projects{
     height: 1000px;
     width: 95%;
@@ -347,6 +351,7 @@ h1{
     font-family: 'Indie Flower', cursive;
     border-radius: 5px;
 }
+
 
 #music_container{
     background-color: #17252A;
@@ -375,47 +380,112 @@ h1{
 
 ul li img{
     padding-top: 50px;
-    height: 100px;
-    width: 100px;
+    height: 130px;
+    width: 130px;
     margin: 0 auto;
     margin-left: 35px;
     margin-right: 35px;
     position: relative; 
 }
 
-@media(max-width: 759px){
+
+.run_around_records{
+    width: 180px;
+    }
+
+@media(max-width: 1133px){
     ul li img{
        margin: 0 auto;
        margin-left: 20px;
        margin-right: 20px;
-       height: 80px;
-       width: 80px;
+       height: 115px;
+       width: 115px;
     }
 
     .run_around_records{
-        width: 110px;
-        }
+        width: 145px;
     }
-
-    @media(max-width: 500px){
-        ul li img{
-           margin-left: 10px;
-           margin-right: 10px;
-           height: 80px;
-           width: 80px;
-        }
-    
-        .run_around_records{
-            width: 75px;
-            }
-
-            #music_logo_container ul{
-                margin: 0;
-            }
-        }
-.run_around_records{
-width: 150px;
 }
+
+@media(max-width: 702px){
+    ul li img{
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 95px;
+        width: 95px;
+    }
+    
+    .run_around_records{
+        width: 115px;
+    }
+}
+
+@media(max-width: 587px){
+    ul li img{
+        margin-left: 5px;
+        margin-right: 5px;
+        height: 75px;
+        width: 75px;
+    }
+    
+    .run_around_records{
+        width: 105px;
+    }
+}
+
+@media(max-width: 411px){
+    ul li img{
+        margin-left: 1px;
+        margin-right: 1px;
+        height: 70px;
+        width: 70px;
+    }
+    
+    .run_around_records{
+        width: 90px;
+    }
+}
+
+@media(max-width: 376px){
+    ul li img{
+        margin: 0;
+        height: 65px;
+        width: 65px;
+    }
+    
+    .run_around_records{
+        width: 95px;
+    }
+}
+
+@media(max-width: 361px){
+    ul li img{
+        margin: 0;
+        height: 60px;
+        width: 60px;
+    }
+    
+    .run_around_records{
+        width: 90px;
+    }
+}
+
+@media(max-width: 320px){
+    ul li img{
+        margin: 0;
+        height: 50px;
+        width: 50px;
+    }
+    
+    .run_around_records{
+        width: 80px;
+    }
+}
+
+/********* END MUSIC PROJECTS ************/
+
+
+/********* CONTACT FORM *****************/
 
 #contact{
     height: 1000px;
