@@ -333,6 +333,7 @@ h1{
     margin: 0 auto;
     border-radius: 20px;
     overflow: scroll;
+    
 }
 
 .webpage_text_portfolio{
@@ -355,14 +356,25 @@ h1{
 
 .gif_text{
     font-size: 36px;
-    margin: 0;
+    margin: 0 auto;
+}
+
+a:hover{
+    color: #C3073f;
+    font-size: 36px;
+    margin: 0 auto;
+}
+
+.gif_subtext{
+    font-size: 20px;
+    color: #C3073f;
+    
 }
 
 td{
     border: 1px solid #C3073f;
     background-color: black;
     width: 50%;
-    height: 300px;
     border-radius: 20px;
 }
 
