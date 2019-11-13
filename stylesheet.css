@@ -285,9 +285,11 @@ h1{
     padding: 25px;
 }
 
+/************ ABOUT ***************/
+
 
 #about{
-    height: 1000px;
+    height: 1500px;
     width: 95%;
     background-color: black;
     margin: 0 auto;
@@ -310,7 +312,45 @@ h1{
     border-radius: 20px;
 }
 
+#slider{
+    width: 100%;
+    background-color: black;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
 
+#box{
+    width: 100%;
+    height: 100%;
+}
+
+#box img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#slider button{
+    display: block;
+    background-color: white;
+    position: absolute;
+    top: 40%;
+    height: 10%;
+    width: 10%;
+    cursor: pointer;
+    opacity: .5;
+}
+
+#forward{
+    margin-left: 90%;
+}
+
+/*********** END ABOUT **************/
+
+/*********** PORTFOLIO **************/
 
 #portfolio{
     height: 1000px;
@@ -378,6 +418,8 @@ td{
     border-radius: 20px;
 }
 
+/****************** END PORTFOLIO ***************/
+
 
 /******* MUSIC PROJECTS **********/
 
@@ -431,6 +473,7 @@ ul li img{
     margin-right: 35px;
     position: relative; 
 }
+
 
 
 .run_around_records{
@@ -559,6 +602,7 @@ input{
     margin: 0 auto;
     width: 200px;
     text-align: center;
+    font-size: 16px;
 }
 
 textarea{
@@ -566,8 +610,11 @@ textarea{
     height: 200px;
     display: block;
     margin: 0 auto;
+    font-size: 24px;
     padding-bottom: 5px;
     border-radius: 5px;
+    text-align: center;
+    padding-top: 15px;
 }
 
 

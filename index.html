@@ -47,6 +47,13 @@
                 <div id="about">
                     <p><u>About</u></p>
                     <div id="about_container">
+                        <div id="slider">
+                            <div id="box">
+                                <img src="img/about/a.jpg">
+                            </div>
+                            <button id="forward" onclick="nextImage()">+</button>
+                            <button id="backward" onclick="previousImage()">-</button>
+                        </div>
 
                     </div>
 
@@ -162,7 +169,7 @@
                             Name:<input type="text" name="name" required>
                             Email:<input type="email" name="email" required>
                             Phone:<input type="text" name="phone_number">
-                            Message:<textarea name="message"></textarea>
+                            Message:<textarea name="message" placeholder="If this is about Web Development, Music Recording, or a Record Label inquiry, please let me know!"></textarea>
                             <button type="submit" form="form_contact" name="submit">Submit</button>
                         </form>
                         
@@ -182,12 +189,14 @@
     
         
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="script.js"></script>
         <script type="text/javascript">
 
-           /* function changeTitle(){
+           /*function changeTitle(){
                 title = document.getElementsByClassName('title');
-                title.textContent = "About || Jeffrey Lubin";
-                //return title;
+                return title.textContent = "<title>About || Jeffrey Lubin</title>";
+                
+                
             }*/
 
             $(document).ready(function(){
