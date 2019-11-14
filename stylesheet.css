@@ -306,7 +306,7 @@ h1{
 
 
 #about_container{
-    background-color: #17252A;
+    background-color: black;
     width: 95%;
     height: 80%;
     margin: 0 auto;
@@ -363,6 +363,22 @@ h1{
     background-color: black;
     color: #C3073f;
     margin-top: 10px;
+}
+
+#about_container table{
+    margin: 0 auto;
+    margin: 0x 5px 0px 5px;
+}
+
+#about_container table ul li{
+    list-style-type: none;
+}
+
+.about_table{
+    
+    background-color: black;
+    width: 400px;
+    height: 400px;
 }
 
 /*********** END ABOUT **************/
@@ -461,6 +477,7 @@ td{
     height: 80%;
     margin: 0 auto;
     display: block;
+    border-radius: 20px;
 }
 
 #music_logo_container{
@@ -479,6 +496,14 @@ td{
 #music_logo_container ul li{
     list-style-type: none;
     display: inline;
+    margin-right: 5px;
+}
+
+#menu_toggle_music{
+    float: right;
+    color: black;
+    margin-right: 10px;
+    display: none;
 }
 
 ul li img{
