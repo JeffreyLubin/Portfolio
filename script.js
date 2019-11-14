@@ -20,6 +20,11 @@ let menu_icon=document.createElement("img");
 
         let menu_icon_white = document.createElement('img');
         menu_icon_white.src="img/menu_icon_white.png";
+        menu_icon_white.style.width="50px";
+        menu_icon_white.style.height="50px";
+        menu_icon_white.style.float="right";
+        menu_icon_white.style.marginRight="20px";
+        menu_icon_white.style.marginTop="10px";
 
 
 
