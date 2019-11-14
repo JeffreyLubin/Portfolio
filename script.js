@@ -39,19 +39,10 @@ let menu_icon=document.createElement("img");
         menu_icon_div.style.marginTop = "-220px";
         g_s.appendChild(menu_icon_div);
 
-        /*menu_icon_white.src="img/menu_icon_white.png";
-        menu_icon_white.style.height = "50px";
-        menu_icon_white.style.width = "50px";
-        menu_icon_white.style.marginRight = "20px";
-        menu_icon_white.style.marginTop = "10px";
-        menu_icon_white.style.cssFloat = "right";
-        menu_icon_white.style.color= "white";
-        menu_icon_white.style.display= "block";
-        menu_icon_white.style.marginTop = "-135px";
-        menu_icon_white.style.opacity = "1";
-        g_s.appendChild(menu_icon_white);*/
-
-        
+        menu_icon_white.onclick=function(){
+            menu_icon_div.style.display="none";
+            g_s.appendChild(menu_icon);
+        }
     }
 
 
@@ -85,6 +76,7 @@ function changeGleamingStreets(){
     g_s_logo.style.height = "180px";
     g_s_logo.style.width = "180px";
     g_s_logo.style.marginTop = "15px";
+
 
     g_s.innerHTML='';
     g_s.style.background = "#EAD721";
