@@ -2,7 +2,38 @@ var slider_content=document.getElementById('box');
 var image = ["a","b","e","h"];
 let g_s = document.getElementById('music_logo_container');
 let studio = document.getElementById('music_logo_container');
-console.log(g_s);
+
+/*********** ATTEMPTING TO CHANGE THE TITLE ***********/
+let title = document.getElementsByTagName('title')
+console.log(title);
+let about = document.getElementById('nav_about');
+let home = document.getElementById('nav_home');
+let portfolio = document.getElementById('nav_portfolio');
+let music_projects = document.getElementById('nav_music_projects');
+let contact = document.getElementById('nav_contact');
+console.log(about);
+
+about.onclick=function changeTitle(){
+    document.title="Jeffrey Lubin || About";
+}
+
+home.onclick=function changeTitle(){
+    document.title="Jeffrey Lubin || Home";
+}
+
+portfolio.onclick=function changeTitle(){
+    document.title="Jeffrey Lubin || Portfolio";
+}
+
+music_projects.onclick=function changeTitle(){
+    document.title="Jeffrey Lubin || Music Projects";
+}
+
+contact.onclick=function changeTitle(){
+    document.title="Jeffrey Lubin || Contact";
+}
+
+
 
 /*CREATING THE NAV ICON THAT WILL BE USED IN TOP RIGHT CORNER OF MUSIC TAB*/
 let menu_icon=document.createElement("img");
@@ -126,31 +157,7 @@ let rar_logo = document.createElement('img');
 
 /************CREATION ENDED****************/
 
-/************* IMAGE SLIDESHOW ************/
-
-var i = image.length;
-
-function nextImage(){
-    if(i<image.length){
-        i= i+1;
-    }
-    else{
-        i=1;
-    }
-        slider_content.innerHTML = "<img src=img/about/"+image[i-1]+".jpg>";
-}
-
-function previousImage(){
-    if(i<image.length+1 && i>1){
-        i= i-1;
-    }
-    else{
-        i=image.length;
-    }
-        slider_content.innerHTML = "<img src=img/about/"+image[i-1]+".jpg>";
-}
-
-/************* SLIDESHOW END ****************/
+/************** MUSIC PROJECTS TABS *********/
 
 function changeGleamingStreets(){
     let g_s_logo=document.createElement("img");
@@ -203,6 +210,35 @@ function changeRarRecords(){
     studio.appendChild(studio_logo);
 }
 
+/************* MUSIC PROJECTS END *************/
+
+/************* IMAGE SLIDESHOW ************/
+
+var i = image.length;
+
+function nextImage(){
+    if(i<image.length){
+        i= i+1;
+    }
+    else{
+        i=1;
+    }
+        slider_content.innerHTML = "<img src=img/about/"+image[i-1]+".jpg>";
+}
+
+function previousImage(){
+    if(i<image.length+1 && i>1){
+        i= i-1;
+    }
+    else{
+        i=image.length;
+    }
+        slider_content.innerHTML = "<img src=img/about/"+image[i-1]+".jpg>";
+}
 
 //setInterval(nextImage, 5000);
+
+/************* SLIDESHOW END ****************/
+
+
     
