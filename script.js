@@ -198,18 +198,21 @@ function changeGleamingStreets(){
     g_s_container_text.style.fontSize= "24px";
     g_s_container_text.style.paddingTop= "20px";
     g_s_container_text.style.textalign = "center";
-    g_s_container_text.style.borderBottom = "1px solid #C3073f";
+    g_s_container_text.style.borderBottom = "1px solid white";
     g_s_container_text.innerHTML = "This is my band, Gleaming Streets. We started in the year 2017. I used to write hardcore music, but the genre became stale and for some reason, I found myself incapable of writing that style of music anymore, so my natural music writing abilities came forth in the form of Punk Rock. All I had at the time was a laptop I dedicated to recording demos, and about 5-6 songs that were ready for the demo treatment. Around the end of 2017/Early 2018, I actually wrote 5 brand new songs, which would later end up on our first <i>'Self-Titled'</i> EP. Over time, I found band members who could help back up the instrumentals live, and while everything was fine for a while, my emotional health started to slip up, and I had to take my focus off of music until I got things right, which is why the first EP didn't end up coming out until September 7th, 2019, which is also the date of our first show at The Paper Tiger. The first show was amazing, there were a lot of friends, family and fun. There was a giant circle pit going on for a majority of our set, and people were actually really digging the music. We had our official merch table set up where we sold some shirts, and gave out free CD's all night. It was a blissful moment I'll keep with me forever. As for the future... well, I accomplished everything I wanted for this band for 2019, so anything beyond the first EP is just playing by ear, but in 2020, there's plans to put out another EP, play even more shows, and hopefully go on an international tour. We don't know yet, but no one ever really knows where life is going to take them until it takes them there. If you read through this, thank you so kindly, feel free to check us out on Spotify, Apple Music, Google Play, YouTube, and all those great streaming companies!";
     //g_s_container.style.display= "inline-block";
+
+    g_s_container_tracklisting = document.createElement('div');
+    g_s_container_tracklisting.setAttribute('class','g_s_container_tracklisting');
 
     g_s_container_text_album = document.createElement('p');
     g_s_container_text_album.setAttribute('class','g_s_container_text_album');
     g_s_container_text_album.style.color = "#EAD721"
     g_s_container_text_album.style.fontSize= "24px";
-    g_s_container_text_album.style.paddingTop= "20px";
-    g_s_container_text_album.style.textalign = "center";
-    g_s_container_text_album.style.flaot = "right";
     g_s_container_text_album.innerHTML = "<i><u>Self-Titled</i></u><br>1. It's A Better Life <br> 2. The Other Day <br> 3. Listen Up, Buttercup <br> 4. You're Not Okay <br> 5. We're Not Okay <br> 6. Wake Up";
+    g_s_container_text_album.style.textAlign="center";
+    g_s_container_text_album.style.margin="0 auto";
+    g_s_container_text_album.style.display = "block";
 
     g_s_album = document.createElement('img');
     g_s_album.src="img/gleaming_streets_album.jpg";
@@ -221,8 +224,6 @@ function changeGleamingStreets(){
     music_brand_logo = document.createElement('div');
     music_brand_logo.setAttribute('class','music_brand_logo_container')
     music_brand_logo.style.background="black";
-    music_brand_logo.style.float="right";
-    music_brand_logo.style.marginRight="250px";
     music_brand_logo.style.width="300px";
     music_brand_logo.style.height="50px;"
 
@@ -256,12 +257,13 @@ function changeGleamingStreets(){
     g_s.appendChild(g_s_container);
     g_s_container.appendChild(g_s_container_text);
     g_s_container.appendChild(g_s_album);
-    g_s_container.appendChild(g_s_container_text_album);
-    g_s_container.appendChild(music_brand_logo);
-    music_brand_logo.appendChild(spotify_logo);
-    music_brand_logo.appendChild(apple_logo);
-    music_brand_logo.appendChild(amazon_logo);
-    music_brand_logo.appendChild(youtube_logo);
+    g_s_container.appendChild(g_s_container_tracklisting);
+    g_s_container_tracklisting.appendChild(g_s_container_text_album);
+    g_s_container_tracklisting.appendChild(spotify_logo);
+    g_s_container_tracklisting.appendChild(apple_logo);
+    g_s_container_tracklisting.appendChild(amazon_logo);
+    g_s_container_tracklisting.appendChild(youtube_logo);
+  
 
 }
 
@@ -307,8 +309,8 @@ function change234Studios(){
     studio_equipment.style.fontSize= "24px"
 
     studio_playlist=document.createElement('div');
-    studio_playlist.innerHTML = "<iframe width='500px' height='300' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/925502449&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'></iframe>";
-    studio_playlist.style.marginTop = "20px"
+    studio_playlist.innerHTML = "<iframe style='width: 50%; height: 500px' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/925502449&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'></iframe>";
+    studio_playlist.style.marginTop = "20px";
 
     studio.innerHTML='';
     studio.style.background = "white";
@@ -364,7 +366,7 @@ function changeRarRecords(){
     gs_album.style.width = "400px";
 
     album_table = document.createElement('table');
-    album_table.style.margin = "200px";
+    album_table.style.margin = "0 auto";
 
     album_table_tr = document.createElement('tr');
     
