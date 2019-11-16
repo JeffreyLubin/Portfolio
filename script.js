@@ -17,6 +17,10 @@ about.onclick=function changeTitle(){
     document.title="Jeffrey Lubin || About";
 }
 
+about.wheel=function changeTitle(){
+    document.title="Jeffrey Lubin || About";
+}
+
 home.onclick=function changeTitle(){
     document.title="Jeffrey Lubin || Home";
 }
