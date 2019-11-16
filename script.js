@@ -2,6 +2,7 @@ var slider_content=document.getElementById('box');
 var image = ["a","b","e","h"];
 let g_s = document.getElementById('music_logo_container');
 let studio = document.getElementById('music_logo_container');
+let record_label = document.getElementById('music_logo_container');
 
 /*********** ATTEMPTING TO CHANGE THE TITLE ***********/
 let title = document.getElementsByTagName('title')
@@ -340,17 +341,56 @@ function changeRarRecords(){
 
     rar_container_text = document.createElement('p');
     rar_container_text.setAttribute('class','g_s_container_text');
-    rar_container_text.style.color = "#EAD721"
+    rar_container_text.style.color = "#C3073f"
     rar_container_text.style.fontSize= "24px";
     rar_container_text.style.paddingTop= "20px";
     rar_container_text.style.textalign = "center";
     rar_container_text.style.borderBottom = "1px solid #C3073f";
-    rar_container_text.innerHTML = "This is the project that I like to call 'Run Around Records'."
+    rar_container_text.innerHTML = "This is the project that I like to call 'Run Around Records'. This one started in 2016 with the formation of my, now defunct, post-hardcore band '<i>Between Then And Now</i>'. I had always had dreams of owning a record label, and I figured that starting one couldn't be as hard as making sure AT LEAST one album gets released succesfully. By succesfully, I'm not talking that the album gets released and it's a world wide hit, but what I'm talking about is making sure the proper promotion, marketing, distribution, and funding has been accounted for, prompting a succesful launch. As long as the album gets out on time, and it has good songs, I'd consider it succesful. I learned a lot of lessons with signing my original band. I currently only have my current band, <i>gleaming streets</i>, signed to this label, but it's better than nothing, and the amount of time, money and enery i've put in the band thus far has reaped us rewards, I just can't wait to see what that projects future holds. <br> So, why call myself a record label if I only have my own projects signed?<br>Well, I'm not going to lie, I lowkey want to sign another band officially. I want to have a trial run for exactly one band, where we team up, get some music made, get the album physically/digitally distributed, invest in some nice photos and shoot a music video, then whatever happens after is up to the good lord.<br>I'm honestly in the business of helping people out, and I know what it's like to be a talented great musician, but without the resources to prove it, and that's why I want to sign a band, and help get whoever that is to the next level. <br> If you're reading this, and you're interested, go to the 'Contact' part of my website here and send me an email and we can discuss! I'm very open and want to finally get this record label up and running, so if you think you've got what it takes, or, more importantly, you think I've got what it takes, contact me!";
 
-    rar_container.appendChild(menu_icon);
-    rar_container.appendChild(rar_logo_nav);
+    rar_container_p=document.createElement('p');
+    rar_container_p.style.color= "#C3073f";
+    rar_container_p.style.fontSize = "48px";
+    rar_container_p.innerHTML = "<u>Releases</u>"
+
+    btan_album = document.createElement('img');
+    btan_album.src="img/between_then_and_now.jpg";
+    btan_album.style.height = "400px";
+    btan_album.style.width = "400px";
+
+    gs_album = document.createElement('img');
+    gs_album.src="img/gleaming_streets_album.jpg";
+    gs_album.style.height = "400px";
+    gs_album.style.width = "400px";
+
+    album_table = document.createElement('table');
+    album_table.style.margin = "200px";
+
+    album_table_tr = document.createElement('tr');
+    
+    album_table_td_gs = document.createElement('td');
+    album_table_td_gs.style.padding= "0 20px";
+
+    album_table_td_btan = document.createElement('td');
+    album_table_td_btan.style.padding= "0 20px";
+
+
+    record_label.innerHTML='';
+    record_label.style.background = "#C3073f";
+    record_label.style.height= 100+"%";
+    record_label.style.borderRadius= "20px";
+
+    record_label.appendChild(menu_icon);
+    record_label.appendChild(rar_logo_nav);
+    record_label.appendChild(rar_container);
     rar_container.appendChild(rar_container_text);
-
+    rar_container.appendChild(rar_container_p);
+    rar_container.appendChild(album_table);
+    album_table.appendChild(album_table_tr);
+    album_table_tr.appendChild(album_table_td_btan);
+    album_table_td_btan.appendChild(btan_album);
+    album_table_tr.appendChild(album_table_td_gs);
+    album_table_td_gs.appendChild(gs_album);
 }
 
 /************* MUSIC PROJECTS END *************/
