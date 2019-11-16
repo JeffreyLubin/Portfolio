@@ -355,6 +355,16 @@ function changeRarRecords(){
     rar_container_p.style.fontSize = "48px";
     rar_container_p.innerHTML = "<u>Releases</u>"
 
+    btan_text_li = document.createElement('p');
+    btan_text_li.style.color= "#C3073f";
+    btan_text_li.style.fontSize = "36px";
+    btan_text_li.innerHTML = "<u>Between Then And Now</u><br><i>Released: 12/22/2016</i>";
+
+    gs_text_li = document.createElement('p');
+    gs_text_li.style.color= "#C3073f";
+    gs_text_li.style.fontSize = "36px";
+    gs_text_li.innerHTML = "<u>Gleaming Streets</u><br><i>Released: 09/06/2019</i>"
+
     btan_album = document.createElement('img');
     btan_album.src="img/between_then_and_now.jpg";
     btan_album.style.height = "400px";
@@ -391,9 +401,11 @@ function changeRarRecords(){
     album_table.appendChild(album_table_tr);
     album_table_tr.appendChild(album_table_td_btan);
     album_table_td_btan.appendChild(btan_album);
+    album_table_td_btan.appendChild(btan_text_li);
     album_table_tr.appendChild(album_table_td_gs);
     album_table_td_gs.appendChild(gs_album);
-}
+    album_table_td_gs.appendChild(gs_text_li);
+    }
 
 /************* MUSIC PROJECTS END *************/
 
