@@ -3,7 +3,7 @@ var image = ["a","b","e","h"];
 
 var i = image.length;
 
-function nextImage(){
+window.onload(){function nextImage(){
     if(i<image.length){
         i= i+1;
     }
@@ -30,3 +30,4 @@ setInterval(nextImage, 5000);
         title = document.getElementsByClassName('theTitle')
         title.innerHTML = "<title>"+newtitle+"</title>";
     }
+}
