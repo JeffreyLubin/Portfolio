@@ -230,21 +230,25 @@ function changeGleamingStreets(){
     spotify_logo=document.createElement('div');
     spotify_logo.style.display = "inline";
     spotify_logo.style.marginRight = "20px";
-    spotify_logo.innerHTML = '<i class="fa fa-spotify" aria-hidden="true"></i>';
+    spotify_logo.style.fontSize = "36px";
+    spotify_logo.innerHTML = '<a href="https://open.spotify.com/artist/2ksxEyiHTcXwqWkV3gt3MQ" target="_blank"><i class="fa fa-spotify" aria-hidden="true"></i></a>';
 
     apple_logo = document.createElement('div');
-    apple_logo.innerHTML = '<i class="fa fa-apple" aria-hidden="true"></i>';
+    apple_logo.innerHTML = '<a href="https://music.apple.com/us/artist/gleaming-streets/1469280233" target="_blank"><i class="fa fa-apple" aria-hidden="true"></i></a>';
     apple_logo.style.marginRight = "20px";
+    apple_logo.style.fontSize = "36px";
     apple_logo.style.display = "inline";
 
     amazon_logo = document.createElement('div');
     amazon_logo.style.marginRight = "20px";
-    amazon_logo.innerHTML = '<i class="fa fa-amazon" aria-hidden="true"></i>';
+    amazon_logo.style.fontSize = "36px";
+    amazon_logo.innerHTML = '<a href="https://www.amazon.com/Gleaming-Streets/dp/B07TT5VTYY/ref=sr_1_1?keywords=gleaming+streets&qid=1573902106&sr=8-1" target="_blank"><i class="fa fa-amazon" aria-hidden="true"></a></i>';
     amazon_logo.style.display = "inline";
 
     youtube_logo = document.createElement('div');
     youtube_logo.style.marginRight = "20px";
-    youtube_logo.innerHTML = '<i class="fa fa-youtube-play" aria-hidden="true"></i>';
+    youtube_logo.style.fontSize = "36px";
+    youtube_logo.innerHTML = '<a href="https://www.youtube.com/channel/UCdSClxZv57CqIDiJ4_b7LHw" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></a></i>';
     youtube_logo.style.display = "inline";
 
     g_s.innerHTML='';
@@ -326,6 +330,7 @@ function change234Studios(){
 }
 
 /****************** 234 STUDIOS ENDS **********************************/
+
 
 function changeRarRecords(){
     let rar_container= document.createElement('div');
