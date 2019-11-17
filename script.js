@@ -50,6 +50,7 @@ let menu_icon=document.createElement("img");
     menu_icon.style.marginTop = "10px";
     menu_icon.style.cssFloat = "right";
 
+
 let gleaming_streets_logo = document.createElement('img');
     gleaming_streets_logo.src= "img/gleamingstreets_white.png";
     gleaming_streets_logo.style.width="100px";
@@ -80,9 +81,32 @@ let menu_icon_white = document.createElement('img');
     menu_icon_white.src="img/menu_icon_white.png";
     menu_icon_white.style.width="50px";
     menu_icon_white.style.height="50px";
-    menu_icon_white.style.marginLeft="20px";
+    menu_icon_white.style.float="right";
     menu_icon_white.style.diplay="block";
-    menu_icon_white.style.marginBottom="25px";
+    menu_icon_white.style.marginTop="11px";
+    menu_icon_white.style.marginRight="20px";
+
+    if (window.innerWidth<=750){
+        menu_icon.style.height = "25px";
+        menu_icon.style.width = "25px";
+        
+
+        gleaming_streets_logo.style.width="50px";
+        gleaming_streets_logo.style.height="50px";
+
+        studio_logo_header.style.width="50px";
+        studio_logo_header.style.height="50px";
+        studio_logo_header.style.marginRight ="20px";
+        studio_logo_header.style.marginLeft ="25px";
+
+        rar_logo.style.width="75px";
+        rar_logo.style.height="50px";
+
+        menu_icon_white.style.width="25px";
+        menu_icon_white.style.height="25px";
+        menu_icon_white.style.marginBottom="42px";
+
+        }
 
 
 let menu_icon_div = document.createElement("div");
@@ -124,7 +148,7 @@ let menu_icon_div = document.createElement("div");
             g_s_container.style.width= "100%";
             g_s_container.style.height = "100%";
             g_s_container.style.background= "black";
-        
+
             let g_s_logo=document.createElement("img");
             g_s_logo.src="img/gleamingstreets.png";
             g_s_logo.style.height = "180px";
@@ -324,6 +348,32 @@ let menu_icon_div = document.createElement("div");
         
             album_table_td_btan = document.createElement('td');
             album_table_td_btan.style.padding= "0 20px";
+
+            if (window.innerWidth<=750){
+
+                rar_logo_nav.style.height = "180px";
+                rar_logo_nav.style.width = "219px";
+        
+        
+                btan_album.style.height = "200px";
+                btan_album.style.width = "200px";
+        
+                gs_album.style.height = "200px";
+                gs_album.style.width = "200px";
+        
+                album_table_td_gs.style.display= "block";
+                album_table_td_btan.style.display = "block";
+        
+                album_table_td_gs.style.margin= "0 auto";
+                album_table_td_btan.style.margin= "0 auto";
+        
+                gs_album.style.marginLeft= "-30px";
+                btan_album.style.marginLeft= "-30px";
+        
+                btan_text_li.style.fontSize = "24px";
+                gs_text_li.style.fontSize = "24px";
+                
+            }
         
         
             record_label.innerHTML='';
@@ -363,6 +413,7 @@ function changeGleamingStreets(){
     g_s_container.style.height = "100%";
     g_s_container.style.background= "black";
 
+
     let g_s_logo=document.createElement("img");
     g_s_logo.src="img/gleamingstreets.png";
     g_s_logo.style.height = "180px";
@@ -397,6 +448,11 @@ function changeGleamingStreets(){
     g_s_album.style.height = "400px";
     g_s_album.style.width = "400px";
     g_s_album.style.float= "left";
+    //if (window.innerWidth<=768){
+        g_s_album.style.float= "none"; 
+        g_s_album.style.display= "block"; 
+        g_s_album.style.margin = "0 auto";
+   // }
     g_s_album.style.marginBottom= "10px";
 
     music_brand_logo = document.createElement('div');
@@ -480,7 +536,7 @@ function change234Studios(){
 
     studio_equipment=document.createElement('div');
     studio_equipment.setAttribute('class','studio_equipment')
-    studio_equipment.style.width = "50%";
+    studio_equipment.style.width = "90%";
     studio_equipment.style.height = "500px";
     studio_equipment.style.margin = "0 auto";
     studio_equipment.style.background= "white";
@@ -491,8 +547,12 @@ function change234Studios(){
     studio_equipment.style.fontSize= "24px"
 
     studio_playlist=document.createElement('div');
-    studio_playlist.innerHTML = "<iframe style='width: 50%; height: 500px' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/925502449&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'></iframe>";
+    studio_playlist.innerHTML = "<iframe style='width: 90%; height: 500px' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/925502449&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'></iframe>";
     studio_playlist.style.marginTop = "20px";
+
+    if (window.innerWidth<=750){
+        studio_logo.style.marginLeft = "20px";
+    }
 
     studio.innerHTML='';
     studio.style.background = "white";
@@ -536,17 +596,22 @@ function changeRarRecords(){
     rar_container_p=document.createElement('p');
     rar_container_p.style.color= "#C3073f";
     rar_container_p.style.fontSize = "48px";
+    rar_container_p.style.textAlign = "center";
     rar_container_p.innerHTML = "<u>Releases</u>"
 
     btan_text_li = document.createElement('p');
     btan_text_li.style.color= "#C3073f";
     btan_text_li.style.fontSize = "36px";
-    btan_text_li.innerHTML = "<u>Between Then And Now</u><br><i>Released: 12/22/2016</i>";
+    btan_text_li.style.textAlign = "center";
+    btan_text_li.style.margin = "0 auto";
+    btan_text_li.innerHTML = "<u>Between Then And Now</u><br><i>Where The Mountains Meet The Sea<br>Released: 12/22/2016</i>";
 
     gs_text_li = document.createElement('p');
     gs_text_li.style.color= "#C3073f";
     gs_text_li.style.fontSize = "36px";
-    gs_text_li.innerHTML = "<u>Gleaming Streets</u><br><i>Released: 09/06/2019</i>"
+    gs_text_li.style.textAlign = "center";
+    gs_text_li.style.margin = "0 auto";
+    gs_text_li.innerHTML = "<u>Gleaming Streets</u><br><i>Self-Titled</i><br>Released: 09/06/2019</i>"
 
     btan_album = document.createElement('img');
     btan_album.src="img/between_then_and_now.jpg";
@@ -562,12 +627,39 @@ function changeRarRecords(){
     album_table.style.margin = "0 auto";
 
     album_table_tr = document.createElement('tr');
+    album_table_tr.style.margin = "0 auto";
     
     album_table_td_gs = document.createElement('td');
-    album_table_td_gs.style.padding= "0 20px";
+    //album_table_td_gs.style.padding= "0 20px";
 
     album_table_td_btan = document.createElement('td');
-    album_table_td_btan.style.padding= "0 20px";
+    //album_table_td_btan.style.padding= "0 20px";
+
+    if (window.innerWidth<=750){
+
+        rar_logo_nav.style.height = "180px";
+        rar_logo_nav.style.width = "219px";
+
+
+        btan_album.style.height = "200px";
+        btan_album.style.width = "200px";
+
+        gs_album.style.height = "200px";
+        gs_album.style.width = "200px";
+
+        album_table_td_gs.style.display= "block";
+        album_table_td_btan.style.display = "block";
+
+        album_table_td_gs.style.margin= "0 auto";
+        album_table_td_btan.style.margin= "0 auto";
+
+        gs_album.style.marginLeft= "-30px";
+        btan_album.style.marginLeft= "-30px";
+
+        btan_text_li.style.fontSize = "24px";
+        gs_text_li.style.fontSize = "24px";
+        
+    }
 
 
     record_label.innerHTML='';
