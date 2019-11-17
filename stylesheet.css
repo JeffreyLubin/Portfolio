@@ -428,10 +428,10 @@ h1{
 }
 
 .portfolio_gif{
-    height: 75%;
+    /*height: 75%;*/
     width: 75%;
     border-radius: 5px;
-    margin-top: 15px;
+    /*margin-top: 15px;*/
     border: 1px solid #C3073f;
 }
 
@@ -456,7 +456,32 @@ td{
     /*border: 1px solid #C3073f;*/
     background-color: black;
     width: 50%;
+    padding: 0;
    
+}
+
+@media(max-width: 700px){
+    #portfolio_table{
+        display: none;
+    }
+
+    #portfolio_table_mobile{
+        margin: 0 auto;
+        width: 100%;
+        display: block;
+    }
+    #portfolio_table_mobile img{
+        height: 75%;
+        width: 75%;
+        border-radius: 5px;
+        margin-top: 15px;
+        border: 1px solid #C3073f;
+    }
+    
+    #portfolio_table_mobile .gif_text{
+        font-size: 36px;
+        margin: 0 auto;
+    }
 }
 
 /****************** END PORTFOLIO ***************/
@@ -575,6 +600,24 @@ ul li img{
     .run_around_records{
         width: 105px;
     }
+
+    #about_text_header{
+        width: 100%;
+        height: 100px;
+        background-color: black;
+        color: #C3073f;
+        padding-top: 10px;
+        font-size: 24px;
+    }
+
+    #about_text_content{
+        width: 100%;
+        height: 100%;
+        font-size: 12px;
+        background-color: black;
+        color: #C3073f;
+        margin-top: 10px;
+    }
 }
 
 @media(max-width: 414px){
@@ -587,11 +630,6 @@ ul li img{
     
     .run_around_records{
         width: 90px;
-    }
-
-    td{
-        display: none;
-        
     }
 
     #about_text_header{

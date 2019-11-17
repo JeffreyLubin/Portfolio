@@ -39,7 +39,6 @@ contact.onclick=function changeTitle(){
 }
 
 
-
 /*CREATING THE NAV ICON THAT WILL BE USED IN TOP RIGHT CORNER OF MUSIC TAB*/
 
 /***** THIS IS THE ONE THAT SHOWS ON THE MAIN PAGES*******/
