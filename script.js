@@ -18,9 +18,6 @@ about.onclick=function changeTitle(){
     document.title="Jeffrey Lubin || About";
 }
 
-about.wheel=function changeTitle(){
-    document.title="Jeffrey Lubin || About";
-}
 
 home.onclick=function changeTitle(){
     document.title="Jeffrey Lubin || Home";
@@ -122,7 +119,7 @@ let menu_icon_div = document.createElement("div");
     menu_icon_div.style.background = "black";
     menu_icon_div.style.display = "block";
     menu_icon_div.style.opacity = ".8";
-    menu_icon_div.style.marginTop = "-1230px";
+    menu_icon_div.style.marginTop = "-1250px";
 
     menu_icon.onclick = function musicNav(){
 
@@ -142,6 +139,10 @@ let menu_icon_div = document.createElement("div");
 
         gleaming_streets_logo.onclick= 
         function changeGleamingStreets(){
+
+           
+            document.title="Jeffrey Lubin || Music || Gleaming Streets";
+            
 
             let g_s_container= document.createElement('div');
             g_s_container.setAttribute('class','g_s_container');
@@ -238,6 +239,8 @@ let menu_icon_div = document.createElement("div");
         }
         studio_logo_header.onclick= function change234Studios(){
 
+            document.title="Jeffrey Lubin || Music || 234 Studios";
+
             let studio_container= document.createElement('div');
             studio_container.setAttribute('class','studio_container');
             studio_container.style.width= "100%";
@@ -262,7 +265,7 @@ let menu_icon_div = document.createElement("div");
         
             studio_equipment=document.createElement('div');
             studio_equipment.setAttribute('class','studio_equipment')
-            studio_equipment.style.width = "50%";
+            studio_equipment.style.width = "90%";
             studio_equipment.style.height = "500px";
             studio_equipment.style.margin = "0 auto";
             studio_equipment.style.background= "white";
@@ -273,8 +276,12 @@ let menu_icon_div = document.createElement("div");
             studio_equipment.style.fontSize= "24px"
         
             studio_playlist=document.createElement('div');
-            studio_playlist.innerHTML = "<iframe style='width: 50%; height: 500px' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/925502449&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'></iframe>";
+            studio_playlist.innerHTML = "<iframe style='width: 90%; height: 500px' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/925502449&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'></iframe>";
             studio_playlist.style.marginTop = "20px";
+        
+            if (window.innerWidth<=750){
+                studio_logo.style.marginLeft = "20px";
+            }
         
             studio.innerHTML='';
             studio.style.background = "white";
@@ -291,6 +298,8 @@ let menu_icon_div = document.createElement("div");
         
 
         rar_logo.onclick= function changeRarRecords(){
+            document.title="Jeffrey Lubin || Music || Run Around Records";
+
             let rar_container= document.createElement('div');
             rar_container.setAttribute('class','rar_container');
             rar_container.style.width= "100%";
@@ -316,17 +325,22 @@ let menu_icon_div = document.createElement("div");
             rar_container_p=document.createElement('p');
             rar_container_p.style.color= "#C3073f";
             rar_container_p.style.fontSize = "48px";
+            rar_container_p.style.textAlign = "center";
             rar_container_p.innerHTML = "<u>Releases</u>"
         
             btan_text_li = document.createElement('p');
             btan_text_li.style.color= "#C3073f";
             btan_text_li.style.fontSize = "36px";
-            btan_text_li.innerHTML = "<u>Between Then And Now</u><br><i>Released: 12/22/2016</i>";
+            btan_text_li.style.textAlign = "center";
+            btan_text_li.style.margin = "0 auto";
+            btan_text_li.innerHTML = "<u>Between Then And Now</u><br><i>Where The Mountains Meet The Sea<br>Released: 12/22/2016</i>";
         
             gs_text_li = document.createElement('p');
             gs_text_li.style.color= "#C3073f";
             gs_text_li.style.fontSize = "36px";
-            gs_text_li.innerHTML = "<u>Gleaming Streets</u><br><i>Released: 09/06/2019</i>"
+            gs_text_li.style.textAlign = "center";
+            gs_text_li.style.margin = "0 auto";
+            gs_text_li.innerHTML = "<u>Gleaming Streets</u><br><i>Self-Titled</i><br>Released: 09/06/2019</i>"
         
             btan_album = document.createElement('img');
             btan_album.src="img/between_then_and_now.jpg";
@@ -342,17 +356,19 @@ let menu_icon_div = document.createElement("div");
             album_table.style.margin = "0 auto";
         
             album_table_tr = document.createElement('tr');
+            album_table_tr.style.margin = "0 auto";
             
             album_table_td_gs = document.createElement('td');
-            album_table_td_gs.style.padding= "0 20px";
+            //album_table_td_gs.style.padding= "0 20px";
         
             album_table_td_btan = document.createElement('td');
-            album_table_td_btan.style.padding= "0 20px";
-
+            //album_table_td_btan.style.padding= "0 20px";
+        
             if (window.innerWidth<=750){
-
+        
                 rar_logo_nav.style.height = "180px";
                 rar_logo_nav.style.width = "219px";
+                rar_logo_nav.style.marginLeft = "-50px";
         
         
                 btan_album.style.height = "200px";
@@ -406,6 +422,8 @@ let menu_icon_div = document.createElement("div");
 /**************** GLEAMING STREETS TAB **********/
 
 function changeGleamingStreets(){
+
+    document.title="Jeffrey Lubin || Music || Gleaming Streets";
 
     let g_s_container= document.createElement('div');
     g_s_container.setAttribute('class','g_s_container');
@@ -511,6 +529,7 @@ function changeGleamingStreets(){
 /************ 234 STUDIOS SECTION  ***************************/
 
 function change234Studios(){
+    document.title="Jeffrey Lubin || Music || 234 Studios";
 
     let studio_container= document.createElement('div');
     studio_container.setAttribute('class','studio_container');
@@ -571,6 +590,8 @@ function change234Studios(){
 
 
 function changeRarRecords(){
+    document.title="Jeffrey Lubin || Music || Run Around Records";
+
     let rar_container= document.createElement('div');
     rar_container.setAttribute('class','rar_container');
     rar_container.style.width= "100%";
@@ -639,6 +660,7 @@ function changeRarRecords(){
 
         rar_logo_nav.style.height = "180px";
         rar_logo_nav.style.width = "219px";
+        rar_logo_nav.style.marginLeft = "-50px";
 
 
         btan_album.style.height = "200px";
