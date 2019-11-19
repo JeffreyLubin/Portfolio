@@ -134,22 +134,20 @@ let menu_icon_div = document.createElement("div");
         menu_icon_white.onclick=function removeMusicNav(){
             menu_icon_div.style.display="none";
             g_s.prepend(menu_icon);
-            console.log(g_s)
         }
 
         gleaming_streets_logo.onclick= 
         function changeGleamingStreets(){
 
-           
             document.title="Jeffrey Lubin || Music || Gleaming Streets";
-            
-
+        
             let g_s_container= document.createElement('div');
             g_s_container.setAttribute('class','g_s_container');
             g_s_container.style.width= "100%";
             g_s_container.style.height = "100%";
             g_s_container.style.background= "black";
-
+        
+        
             let g_s_logo=document.createElement("img");
             g_s_logo.src="img/gleamingstreets.png";
             g_s_logo.style.height = "180px";
@@ -184,6 +182,10 @@ let menu_icon_div = document.createElement("div");
             g_s_album.style.height = "400px";
             g_s_album.style.width = "400px";
             g_s_album.style.float= "left";
+            if (window.innerWidth<=768){
+                g_s_album.style.height = "300px";
+                g_s_album.style.width = "300px";
+            }
             g_s_album.style.marginBottom= "10px";
         
             music_brand_logo = document.createElement('div');
@@ -466,11 +468,10 @@ function changeGleamingStreets(){
     g_s_album.style.height = "400px";
     g_s_album.style.width = "400px";
     g_s_album.style.float= "left";
-    //if (window.innerWidth<=768){
-        g_s_album.style.float= "none"; 
-        g_s_album.style.display= "block"; 
-        g_s_album.style.margin = "0 auto";
-   // }
+    if (window.innerWidth<=768){
+        g_s_album.style.height = "300px";
+        g_s_album.style.width = "300px";
+    }
     g_s_album.style.marginBottom= "10px";
 
     music_brand_logo = document.createElement('div');
