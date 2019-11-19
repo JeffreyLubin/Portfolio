@@ -133,7 +133,7 @@ let menu_icon_div = document.createElement("div");
     menu_icon_div.style.opacity = ".8";
     menu_icon_div.style.borderRadius = "20px 20px 0 0";
     menu_icon_div.style.marginTop = "-1250px";
-    if (window.innerWidth<=400){
+    if (window.innerWidth<=420){
         menu_icon_div.style.marginTop = "-1230px";
     }
 
@@ -155,114 +155,114 @@ let menu_icon_div = document.createElement("div");
         gleaming_streets_logo.onclick= 
         function changeGleamingStreets(){
 
-    document.title="Jeffrey Lubin || Music || Gleaming Streets";
-
-    let g_s_container= document.createElement('div');
-    g_s_container.setAttribute('class','g_s_container');
-    g_s_container.style.width= "100%";
-    g_s_container.style.height = "100%";
-    g_s_container.style.background= "black";
-
-
-    let g_s_logo=document.createElement("img");
-    g_s_logo.src="img/gleamingstreets.png";
-    g_s_logo.style.height = "180px";
-    g_s_logo.style.width = "180px";
-    g_s_logo.style.marginTop = "15px";
-    g_s_logo.style.paddingLeft = "70px";
-
-    g_s_container_text = document.createElement('p');
-    g_s_container_text.setAttribute('class','g_s_container_text');
-    g_s_container_text.style.color = "#EAD721"
-    g_s_container_text.style.fontSize= "24px";
-    g_s_container_text.style.paddingTop= "20px";
-    g_s_container_text.style.textalign = "center";
-    g_s_container_text.style.borderBottom = "1px solid white";
-    g_s_container_text.innerHTML = "This is my band, Gleaming Streets. We started in the year 2017. I used to write hardcore music, but the genre became stale and for some reason, I found myself incapable of writing that style of music anymore, so my natural music writing abilities came forth in the form of Punk Rock. All I had at the time was a laptop I dedicated to recording demos, and about 5-6 songs that were ready for the demo treatment. Around the end of 2017/Early 2018, I actually wrote 5 brand new songs, which would later end up on our first <i>'Self-Titled'</i> EP. Over time, I found band members who could help back up the instrumentals live, and while everything was fine for a while, my emotional health started to slip up, and I had to take my focus off of music until I got things right, which is why the first EP didn't end up coming out until September 7th, 2019, which is also the date of our first show at The Paper Tiger. The first show was amazing, there were a lot of friends, family and fun. There was a giant circle pit going on for a majority of our set, and people were actually really digging the music. We had our official merch table set up where we sold some shirts, and gave out free CD's all night. It was a blissful moment I'll keep with me forever. As for the future... well, I accomplished everything I wanted for this band for 2019, so anything beyond the first EP is just playing by ear, but in 2020, there's plans to put out another EP, play even more shows, and hopefully go on an international tour. We don't know yet, but no one ever really knows where life is going to take them until it takes them there. If you read through this, thank you so kindly, feel free to check us out on Spotify, Apple Music, Google Play, YouTube, and all those great streaming companies!";
-    //g_s_container.style.display= "inline-block";
-
-    g_s_container_tracklisting = document.createElement('div');
-    g_s_container_tracklisting.setAttribute('class','g_s_container_tracklisting');
-
-    g_s_container_text_album = document.createElement('p');
-    g_s_container_text_album.setAttribute('class','g_s_container_text_album');
-    g_s_container_text_album.style.color = "#EAD721"
-    g_s_container_text_album.style.fontSize= "24px";
-    g_s_container_text_album.innerHTML = "<i><u>Self-Titled</i></u><br>1. It's A Better Life <br> 2. The Other Day <br> 3. Listen Up, Buttercup <br> 4. You're Not Okay <br> 5. We're Not Okay <br> 6. Wake Up";
-    g_s_container_text_album.style.textAlign="center";
-    g_s_container_text_album.style.margin="0 auto";
-    g_s_container_text_album.style.display = "block";
-
-    g_s_album_div = document.createElement('div');
-    g_s_album_div.setAttribute('class','g_s_album_div');
-
-    g_s_album = document.createElement('img');
-    g_s_album.src="img/gleaming_streets_album.jpg";
-    g_s_album.style.height = "400px";
-    g_s_album.style.width = "400px";
-    //g_s_album.style.float= "left";
-    if (window.innerWidth<=768){
-        g_s_album.style.height = "300px";
-        g_s_album.style.width = "300px";
-    }
-    g_s_album.style.marginBottom= "10px";
-
-    music_brand_logo = document.createElement('div');
-    music_brand_logo.setAttribute('class','music_brand_logo_container')
-    music_brand_logo.style.background="black";
-    music_brand_logo.style.width="300px";
-    music_brand_logo.style.height="50px;"
-
-    spotify_logo=document.createElement('div');
-    spotify_logo.style.display = "inline";
-    spotify_logo.style.marginRight = "20px";
-    spotify_logo.style.fontSize = "36px";
-    spotify_logo.innerHTML = '<a href="https://open.spotify.com/artist/2ksxEyiHTcXwqWkV3gt3MQ" target="_blank"><i class="fa fa-spotify" aria-hidden="true"></i></a>';
-
-    apple_logo = document.createElement('div');
-    apple_logo.innerHTML = '<a href="https://music.apple.com/us/artist/gleaming-streets/1469280233" target="_blank"><i class="fa fa-apple" aria-hidden="true"></i></a>';
-    apple_logo.style.marginRight = "20px";
-    apple_logo.style.fontSize = "36px";
-    apple_logo.style.display = "inline";
-
-    amazon_logo = document.createElement('div');
-    amazon_logo.style.marginRight = "20px";
-    amazon_logo.style.fontSize = "36px";
-    amazon_logo.innerHTML = '<a href="https://www.amazon.com/Gleaming-Streets/dp/B07TT5VTYY/ref=sr_1_1?keywords=gleaming+streets&qid=1573902106&sr=8-1" target="_blank"><i class="fa fa-amazon" aria-hidden="true"></a></i>';
-    amazon_logo.style.display = "inline";
-
-    youtube_logo = document.createElement('div');
-    youtube_logo.style.marginRight = "20px";
-    youtube_logo.style.fontSize = "36px";
-    youtube_logo.innerHTML = '<a href="https://www.youtube.com/channel/UCdSClxZv57CqIDiJ4_b7LHw" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></a></i>';
-    youtube_logo.style.display = "inline";
-
-    g_s.innerHTML='';
-    g_s.style.background = "#EAD721";
-    g_s.style.height= 100+"%";
-    g_s.style.borderRadius= "20px";
-
-    g_s.appendChild(menu_icon);
-    g_s.appendChild(g_s_logo);
-    g_s.appendChild(g_s_container);
-    g_s_container.appendChild(g_s_container_text);
-    g_s_album_div.appendChild(g_s_album)
-    g_s_container.appendChild(g_s_album_div);
-    g_s_container.appendChild(g_s_container_tracklisting);
-    g_s_container_tracklisting.appendChild(g_s_container_text_album);
-    g_s_container_tracklisting.appendChild(spotify_logo);
-    g_s_container_tracklisting.appendChild(apple_logo);
-    g_s_container_tracklisting.appendChild(amazon_logo);
-    g_s_container_tracklisting.appendChild(youtube_logo);
-  
-
-}
+            document.title="Jeffrey Lubin || Music || Gleaming Streets";
+        
+            let g_s_container= document.createElement('div');
+            g_s_container.setAttribute('class','g_s_container');
+            g_s_container.style.width= "100%";
+            g_s_container.style.height = "100%";
+            g_s_container.style.background= "black";
+        
+        
+            let g_s_logo=document.createElement("img");
+            g_s_logo.src="img/gleamingstreets.png";
+            g_s_logo.style.height = "180px";
+            g_s_logo.style.width = "180px";
+            g_s_logo.style.marginTop = "15px";
+            g_s_logo.style.paddingLeft = "70px";
+        
+            g_s_container_text = document.createElement('p');
+            g_s_container_text.setAttribute('class','g_s_container_text');
+            g_s_container_text.style.color = "#EAD721"
+            g_s_container_text.style.fontSize= "24px";
+            g_s_container_text.style.paddingTop= "20px";
+            g_s_container_text.style.textalign = "center";
+            g_s_container_text.style.borderBottom = "1px solid white";
+            g_s_container_text.innerHTML = "This is my band, Gleaming Streets. We started in the year 2017. I used to write hardcore music, but the genre became stale and for some reason, I found myself incapable of writing that style of music anymore, so my natural music writing abilities came forth in the form of Punk Rock. All I had at the time was a laptop I dedicated to recording demos, and about 5-6 songs that were ready for the demo treatment. Around the end of 2017/Early 2018, I actually wrote 5 brand new songs, which would later end up on our first <i>'Self-Titled'</i> EP. Over time, I found band members who could help back up the instrumentals live, and while everything was fine for a while, my emotional health started to slip up, and I had to take my focus off of music until I got things right, which is why the first EP didn't end up coming out until September 7th, 2019, which is also the date of our first show at The Paper Tiger. The first show was amazing, there were a lot of friends, family and fun. There was a giant circle pit going on for a majority of our set, and people were actually really digging the music. We had our official merch table set up where we sold some shirts, and gave out free CD's all night. It was a blissful moment I'll keep with me forever. As for the future... well, I accomplished everything I wanted for this band for 2019, so anything beyond the first EP is just playing by ear, but in 2020, there's plans to put out another EP, play even more shows, and hopefully go on an international tour. We don't know yet, but no one ever really knows where life is going to take them until it takes them there. If you read through this, thank you so kindly, feel free to check us out on Spotify, Apple Music, Google Play, YouTube, and all those great streaming companies!";
+            //g_s_container.style.display= "inline-block";
+        
+            g_s_container_tracklisting = document.createElement('div');
+            g_s_container_tracklisting.setAttribute('class','g_s_container_tracklisting');
+        
+            g_s_container_text_album = document.createElement('p');
+            g_s_container_text_album.setAttribute('class','g_s_container_text_album');
+            g_s_container_text_album.style.color = "#EAD721"
+            g_s_container_text_album.style.fontSize= "24px";
+            g_s_container_text_album.innerHTML = "<i><u>Self-Titled</i></u><br>1. It's A Better Life <br> 2. The Other Day <br> 3. Listen Up, Buttercup <br> 4. You're Not Okay <br> 5. We're Not Okay <br> 6. Wake Up";
+            g_s_container_text_album.style.margin="0 auto";
+            g_s_container_text_album.style.display = "block";
+        
+            g_s_album_div = document.createElement('div');
+            g_s_album_div.setAttribute('class','g_s_album_div');
+        
+            g_s_album = document.createElement('img');
+            g_s_album.src="img/gleaming_streets_album.jpg";
+            g_s_album.style.height = "400px";
+            g_s_album.style.width = "400px";
+            //g_s_album.style.float= "left";
+            if (window.innerWidth<=768){
+                g_s_album.style.height = "300px";
+                g_s_album.style.width = "300px";
+            }
+            g_s_album.style.marginBottom= "10px";
+        
+            music_brand_logo = document.createElement('div');
+            music_brand_logo.setAttribute('class','music_brand_logo_container')
+            music_brand_logo.style.background="black";
+            music_brand_logo.style.width="300px";
+            music_brand_logo.style.height="50px;"
+            music_brand_logo.style.margin="0 auto";
+        
+            spotify_logo=document.createElement('div');
+            spotify_logo.style.display = "inline";
+            spotify_logo.style.marginRight = "20px";
+            spotify_logo.style.fontSize = "36px";
+            spotify_logo.innerHTML = '<a href="https://open.spotify.com/artist/2ksxEyiHTcXwqWkV3gt3MQ" target="_blank"><i class="fa fa-spotify" aria-hidden="true"></i></a>';
+        
+            apple_logo = document.createElement('div');
+            apple_logo.innerHTML = '<a href="https://music.apple.com/us/artist/gleaming-streets/1469280233" target="_blank"><i class="fa fa-apple" aria-hidden="true"></i></a>';
+            apple_logo.style.marginRight = "20px";
+            apple_logo.style.fontSize = "36px";
+            apple_logo.style.display = "inline";
+        
+            amazon_logo = document.createElement('div');
+            amazon_logo.style.marginRight = "20px";
+            amazon_logo.style.fontSize = "36px";
+            amazon_logo.innerHTML = '<a href="https://www.amazon.com/Gleaming-Streets/dp/B07TT5VTYY/ref=sr_1_1?keywords=gleaming+streets&qid=1573902106&sr=8-1" target="_blank"><i class="fa fa-amazon" aria-hidden="true"></a></i>';
+            amazon_logo.style.display = "inline";
+        
+            youtube_logo = document.createElement('div');
+            youtube_logo.style.marginRight = "20px";
+            youtube_logo.style.fontSize = "36px";
+            youtube_logo.innerHTML = '<a href="https://www.youtube.com/channel/UCdSClxZv57CqIDiJ4_b7LHw" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></a></i>';
+            youtube_logo.style.display = "inline";
+        
+            g_s.innerHTML='';
+            g_s.style.background = "#EAD721";
+            g_s.style.height= 100+"%";
+            g_s.style.borderRadius= "20px";
+        
+            g_s.appendChild(menu_icon);
+            g_s.appendChild(g_s_logo);
+            g_s.appendChild(g_s_container);
+            g_s_container.appendChild(g_s_container_text);
+            g_s_album_div.appendChild(g_s_album)
+            g_s_container.appendChild(g_s_album_div);
+            g_s_container.appendChild(g_s_container_tracklisting);
+            g_s_container_tracklisting.appendChild(g_s_container_text_album);
+            g_s_container.appendChild(music_brand_logo);
+            music_brand_logo.appendChild(spotify_logo);
+            music_brand_logo.appendChild(apple_logo);
+            music_brand_logo.appendChild(amazon_logo);
+            music_brand_logo.appendChild(youtube_logo);
+          
+        
+        }
         
         }
         studio_logo_header.onclick= function change234Studios(){
-
             document.title="Jeffrey Lubin || Music || 234 Studios";
-
+        
             let studio_container= document.createElement('div');
             studio_container.setAttribute('class','studio_container');
             studio_container.style.width= "100%";
@@ -321,7 +321,7 @@ let menu_icon_div = document.createElement("div");
 
         rar_logo.onclick= function changeRarRecords(){
             document.title="Jeffrey Lubin || Music || Run Around Records";
-
+        
             let rar_container= document.createElement('div');
             rar_container.setAttribute('class','rar_container');
             rar_container.style.width= "100%";
@@ -364,52 +364,47 @@ let menu_icon_div = document.createElement("div");
             gs_text_li.style.margin = "0 auto";
             gs_text_li.innerHTML = "<u>Gleaming Streets</u><br><i>Self-Titled</i><br>Released: 09/06/2019</i>"
         
-            btan_album = document.createElement('img');
-            btan_album.src="img/between_then_and_now.jpg";
-            btan_album.style.height = "400px";
-            btan_album.style.width = "400px";
+            btan_album_img = document.createElement('img');
+            btan_album_img.src="img/between_then_and_now.jpg";
+            btan_album_img.style.height = "400px";
+            btan_album_img.style.width = "400px";
         
-            gs_album = document.createElement('img');
-            gs_album.src="img/gleaming_streets_album.jpg";
-            gs_album.style.height = "400px";
-            gs_album.style.width = "400px";
+            gs_album_img = document.createElement('img');
+            gs_album_img.src="img/gleaming_streets_album.jpg";
+            gs_album_img.style.height = "400px";
+            gs_album_img.style.width = "400px";
         
-            album_table = document.createElement('table');
-            album_table.style.margin = "0 auto";
+            btan_album = document.createElement('div');
+            btan_album.style.width = "100%";
+            btan_album.style.margin = "0 auto";
+            //btan_album.style.borderBottom = "1px solid #C3073f";
+            btan_album.style.marginTop = "50px";
         
-            album_table_tr = document.createElement('tr');
-            album_table_tr.style.margin = "0 auto";
-            
-            album_table_td_gs = document.createElement('td');
-            //album_table_td_gs.style.padding= "0 20px";
+            gs_album = document.createElement('div');
+            gs_album.style.width = "100%";
+            gs_album.style.margin = "0 auto";
+            gs_album.style.borderBottom = "1px solid #C3073F";
+            gs_album.style.marginTop = "20px";
         
-            album_table_td_btan = document.createElement('td');
-            //album_table_td_btan.style.padding= "0 20px";
         
-            if (window.innerWidth<=750){
+        
+        
+        
+            if (window.innerWidth<=500){
         
                 rar_logo_nav.style.height = "180px";
                 rar_logo_nav.style.width = "219px";
                 rar_logo_nav.style.marginLeft = "-50px";
         
         
-                btan_album.style.height = "200px";
-                btan_album.style.width = "200px";
+                btan_album_img.style.height = "300px";
+                btan_album_img.style.width = "300px";
         
-                gs_album.style.height = "200px";
-                gs_album.style.width = "200px";
+                gs_album_img.style.height = "300px";
+                gs_album_img.style.width = "300px";
         
-                album_table_td_gs.style.display= "block";
-                album_table_td_btan.style.display = "block";
-        
-                album_table_td_gs.style.margin= "0 auto";
-                album_table_td_btan.style.margin= "0 auto";
-        
-                gs_album.style.marginLeft= "-30px";
-                btan_album.style.marginLeft= "-30px";
-        
-                btan_text_li.style.fontSize = "24px";
-                gs_text_li.style.fontSize = "24px";
+                btan_text_li.style.fontSize = "20px";
+                gs_text_li.style.fontSize = "20px";
                 
             }
         
@@ -424,14 +419,12 @@ let menu_icon_div = document.createElement("div");
             record_label.appendChild(rar_container);
             rar_container.appendChild(rar_container_text);
             rar_container.appendChild(rar_container_p);
-            rar_container.appendChild(album_table);
-            album_table.appendChild(album_table_tr);
-            album_table_tr.appendChild(album_table_td_btan);
-            album_table_td_btan.appendChild(btan_album);
-            album_table_td_btan.appendChild(btan_text_li);
-            album_table_tr.appendChild(album_table_td_gs);
-            album_table_td_gs.appendChild(gs_album);
-            album_table_td_gs.appendChild(gs_text_li);
+            rar_container.appendChild(gs_album);
+            gs_album.appendChild(gs_album_img);
+            gs_album.appendChild(gs_text_li);
+            rar_container.appendChild(btan_album);
+            btan_album.appendChild(btan_album_img);
+            btan_album.appendChild(btan_text_li);
             }
 
     
