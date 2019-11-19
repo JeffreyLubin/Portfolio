@@ -479,7 +479,6 @@ function changeGleamingStreets(){
     g_s_container_text_album.style.color = "#EAD721"
     g_s_container_text_album.style.fontSize= "24px";
     g_s_container_text_album.innerHTML = "<i><u>Self-Titled</i></u><br>1. It's A Better Life <br> 2. The Other Day <br> 3. Listen Up, Buttercup <br> 4. You're Not Okay <br> 5. We're Not Okay <br> 6. Wake Up";
-    g_s_container_text_album.style.textAlign="center";
     g_s_container_text_album.style.margin="0 auto";
     g_s_container_text_album.style.display = "block";
 
@@ -502,6 +501,7 @@ function changeGleamingStreets(){
     music_brand_logo.style.background="black";
     music_brand_logo.style.width="300px";
     music_brand_logo.style.height="50px;"
+    music_brand_logo.style.margin="0 auto";
 
     spotify_logo=document.createElement('div');
     spotify_logo.style.display = "inline";
@@ -540,10 +540,11 @@ function changeGleamingStreets(){
     g_s_container.appendChild(g_s_album_div);
     g_s_container.appendChild(g_s_container_tracklisting);
     g_s_container_tracklisting.appendChild(g_s_container_text_album);
-    g_s_container_tracklisting.appendChild(spotify_logo);
-    g_s_container_tracklisting.appendChild(apple_logo);
-    g_s_container_tracklisting.appendChild(amazon_logo);
-    g_s_container_tracklisting.appendChild(youtube_logo);
+    g_s_container.appendChild(music_brand_logo);
+    music_brand_logo.appendChild(spotify_logo);
+    music_brand_logo.appendChild(apple_logo);
+    music_brand_logo.appendChild(amazon_logo);
+    music_brand_logo.appendChild(youtube_logo);
   
 
 }
@@ -659,52 +660,47 @@ function changeRarRecords(){
     gs_text_li.style.margin = "0 auto";
     gs_text_li.innerHTML = "<u>Gleaming Streets</u><br><i>Self-Titled</i><br>Released: 09/06/2019</i>"
 
-    btan_album = document.createElement('img');
-    btan_album.src="img/between_then_and_now.jpg";
-    btan_album.style.height = "400px";
-    btan_album.style.width = "400px";
+    btan_album_img = document.createElement('img');
+    btan_album_img.src="img/between_then_and_now.jpg";
+    btan_album_img.style.height = "400px";
+    btan_album_img.style.width = "400px";
 
-    gs_album = document.createElement('img');
-    gs_album.src="img/gleaming_streets_album.jpg";
-    gs_album.style.height = "400px";
-    gs_album.style.width = "400px";
+    gs_album_img = document.createElement('img');
+    gs_album_img.src="img/gleaming_streets_album.jpg";
+    gs_album_img.style.height = "400px";
+    gs_album_img.style.width = "400px";
 
-    album_table = document.createElement('table');
-    album_table.style.margin = "0 auto";
+    btan_album = document.createElement('div');
+    btan_album.style.width = "100%";
+    btan_album.style.margin = "0 auto";
+    //btan_album.style.borderBottom = "1px solid #C3073f";
+    btan_album.style.marginTop = "50px";
 
-    album_table_tr = document.createElement('tr');
-    album_table_tr.style.margin = "0 auto";
-    
-    album_table_td_gs = document.createElement('td');
-    //album_table_td_gs.style.padding= "0 20px";
+    gs_album = document.createElement('div');
+    gs_album.style.width = "100%";
+    gs_album.style.margin = "0 auto";
+    gs_album.style.borderBottom = "1px solid #C3073F";
+    gs_album.style.marginTop = "20px";
 
-    album_table_td_btan = document.createElement('td');
-    //album_table_td_btan.style.padding= "0 20px";
 
-    if (window.innerWidth<=750){
+
+
+
+    if (window.innerWidth<=500){
 
         rar_logo_nav.style.height = "180px";
         rar_logo_nav.style.width = "219px";
         rar_logo_nav.style.marginLeft = "-50px";
 
 
-        btan_album.style.height = "200px";
-        btan_album.style.width = "200px";
+        btan_album_img.style.height = "300px";
+        btan_album_img.style.width = "300px";
 
-        gs_album.style.height = "200px";
-        gs_album.style.width = "200px";
+        gs_album_img.style.height = "300px";
+        gs_album_img.style.width = "300px";
 
-        album_table_td_gs.style.display= "block";
-        album_table_td_btan.style.display = "block";
-
-        album_table_td_gs.style.margin= "0 auto";
-        album_table_td_btan.style.margin= "0 auto";
-
-        gs_album.style.marginLeft= "-30px";
-        btan_album.style.marginLeft= "-30px";
-
-        btan_text_li.style.fontSize = "24px";
-        gs_text_li.style.fontSize = "24px";
+        btan_text_li.style.fontSize = "20px";
+        gs_text_li.style.fontSize = "20px";
         
     }
 
@@ -719,14 +715,12 @@ function changeRarRecords(){
     record_label.appendChild(rar_container);
     rar_container.appendChild(rar_container_text);
     rar_container.appendChild(rar_container_p);
-    rar_container.appendChild(album_table);
-    album_table.appendChild(album_table_tr);
-    album_table_tr.appendChild(album_table_td_btan);
-    album_table_td_btan.appendChild(btan_album);
-    album_table_td_btan.appendChild(btan_text_li);
-    album_table_tr.appendChild(album_table_td_gs);
-    album_table_td_gs.appendChild(gs_album);
-    album_table_td_gs.appendChild(gs_text_li);
+    rar_container.appendChild(gs_album);
+    gs_album.appendChild(gs_album_img);
+    gs_album.appendChild(gs_text_li);
+    rar_container.appendChild(btan_album);
+    btan_album.appendChild(btan_album_img);
+    btan_album.appendChild(btan_text_li);
     }
 
 /************* MUSIC PROJECTS END *************/
